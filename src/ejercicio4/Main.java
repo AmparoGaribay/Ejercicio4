@@ -23,16 +23,16 @@ public class Main {
 		 * */
 		
 
-		Scanner s = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);// se agrego el sistem. in 
 
 		System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
 		String j1 = s.nextLine();
 
 		System.out.print("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
-		//  Scanner s2 = new Scanner();
+		//  Scanner s2 = new Scanner(); se comento esta linea por que es innecesaria por que nunca se llama y ademas no se usa
 		String j2 = s.nextLine();
 
-		if (j1 == j2) {
+		if (j1 == j2) {// se quitaron los parentesis restantes
 			System.out.println("Empate");
 		} else {
 			int g = 2;
@@ -45,7 +45,7 @@ public class Main {
 				case "papel":
 					if (j2 == "piedra") {
 						g = 1;
-					}
+					}//se añade la llave faltante
 				case "tijera":
 					if (j2.equals("papel")) {
 						g = 1;
@@ -55,7 +55,7 @@ public class Main {
 					}
 					System.out.println("Gana el jugador " + g);
 			}
-		s.close();
+		s.close();//se añade el cambio de el cierre al close 
 
 		}
 	
